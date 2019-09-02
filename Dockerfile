@@ -11,7 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install apache2 libapache2-mod-php
 # Enable apache mods.
 RUN a2enmod php5
 RUN a2enmod rewrite
-
+RUN php5enmod mcrypt
 # Install supervisord
 RUN easy_install supervisor
 
